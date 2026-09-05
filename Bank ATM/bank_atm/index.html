@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark"></html>
+<html lang="pt-BR" class="bg-white dark:bg-gray-950 scheme-light dark:scheme-dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +7,114 @@
     <link href="/src/style.css" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div id="app">
+    </div>
     <h1 class="text-3xl font-bold underline">
     Banco ATM
   </h1>
+  <div>
+  <p id="hora"></p>
+  <p id="dia_semana"></p>
+  <p id="clima"></p>
+</div>
+
+
+
+
+  <!--Página 1 -->
+  <!--h2>Digite sua senha: </h2-->
+
+  <!--Página 2-->
+<form id="form-saque">
+  <input
+  <input id="montante"
+  type="number"
+  placeholder="Digite o montante"
+  class="w-full rounded-lg border px-4 py-3"
+/>
+ <button
+    type="submit"
+    class="rounded-lg border px-6 py-3"
+  >
+    Sacar
+  </button>
+</form>
+
+    <input
+      id="resultado"
+      type="text"
+      readonly
+      class="w-full rounded-xl border py-4 pl-12 pr-4 text-right text-2xl"
+    />
+
+   
+
+  <div class="grid grid-cols-3 gap-3 mt-4">
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+
+    <button type="button">4</button>
+    <button type="button">5</button>
+    <button type="button">6</button>
+
+    <button type="button">7</button>
+    <button type="button">8</button>
+    <button type="button">9</button>
+    <input
+      id="resultado"
+      type="text"
+      readonly
+    />
+
+    <!-- Botão apagar -->
+    <button type="button">0</button>
+    <div class="relative">
+      
+  </div>
+  </div>
+
+</div>
+  </div>
+   <h2>Sacar</h2>
+   <div class="grid grid-cols-2 gap-4">
+  <button
+    id="valor-10"
+    type="button"
+    class="rounded-xl border p-6 text-2xl font-bold shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+  >
+    R$ 10
+  </button>
+
+  <button
+    id="valor-20"
+    type="button"
+    class="rounded-xl border p-6 text-2xl font-bold shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+  >
+    R$ 20
+  </button>
+
+  <button
+    id="valor-50"
+    type="button"
+    class="rounded-xl border p-6 text-2xl font-bold shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+  >
+    R$ 50
+  </button>
+
+  <button
+    id="valor-100"
+    type="button"
+    class="rounded-xl border p-6 text-2xl font-bold shadow-sm hover:shadow-md hover:-translate-y-1 transition"
+  >
+    R$ 100
+  </button>
+</div>
+<div
+  id="saldo"
+  class="w-80 rounded-xl border p-6 text-3xl font-bold"
+>
+</div>
   </body>
+  <script type="module" src="/src/main.js"></script>
 </html>
