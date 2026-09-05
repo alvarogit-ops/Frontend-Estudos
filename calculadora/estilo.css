@@ -1,0 +1,58 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(25deg, black, rgb(0, 140, 255));
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
+}
+
+
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.calculadora{
+    top: 50%;
+    padding: 16px;
+    left: 50%;
+    position: absolute;
+    background-color: black;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+   
+}
+
+
+#resultado{
+    background-color: white;
+    width: 220px;
+    color: rgb(0, 0, 0);
+}
+
+button{
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: medium;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(56, 55, 55);
+}
+
+td[colspan="2"] button{
+    width: 100px;
+    background-color: gold;
+    color: black;
+    font-weight: 800;
+    border-radius: 20px;
+}
+
+.operador{
+    color: gold;
+    font-weight: 800;
+}
